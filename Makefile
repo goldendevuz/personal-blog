@@ -1,15 +1,16 @@
-scratch:
-	django-admin startproject config .
-
-noidea:
-	git rm -r --cached .idea/
-env:
+gen-env:
 	python3 -m venv env && . env/bin/activate
+migration:
+	python3 manage.py makemigrations
+migrate:
+	python3 manage.py migrate
+mig:
+	make migration & make migrate
 i:
 	pip install -r requirements.txt
-mig:
-	python manage.py makemigrations && python manage.py migrate
 cru:
-	python manage.py createsuperuser
+	python manage.py createsuperuser --username superuser --email superuser@example.com
 run:
-	python manage.py runserver 0.0.0.0:8000
+	python3 manage.py runserver 8000
+freeze:
+	pip freeze > requirements.txt

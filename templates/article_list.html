@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="container mt-5">
+        <ul class="list-group">
+            {% for article in object_list %}
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-8">
+                            <a href="{% url 'article_detail' article.pk %}">{{ article.title }}</a>
+                        </div>
+                        <div class="col-4 text-right">{{ article.date|date:"F j Y" }}</div>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock content %}

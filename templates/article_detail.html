@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container-fluid">
+        <div class="card">
+            <div class="card-body">
+                <h1 class="card-title">{{ object.title }}</h1>
+                <h6 class="card-subtitle mb-2 text-muted">{{ object.date|date:"F j Y" }}</h6>
+                <p class="card-text">{{ object.body | safe }}</p>
+
+                <!-- Edit Button -->
+                <a href="{% url 'article_edit' object.pk %}" class="btn btn-warning me-2">Edit</a>
+
+                <!-- Delete Button -->
+                <a href="{% url 'article_delete' object.pk %}" class="btn btn-danger me-2">Delete</a>
+
+                <!-- All Posts Button -->
+                <a href="{% url 'home' %}" class="btn btn-secondary">All articles</a>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

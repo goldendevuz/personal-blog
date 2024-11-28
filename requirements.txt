@@ -1,3 +1,6 @@
 Django
-wheel
-mysqlclient
+django-jazzmin
+icecream
+django-crispy-forms
+crispy-bootstrap5
+environs
