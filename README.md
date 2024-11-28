@@ -66,10 +66,6 @@ PersonalBlog is a Django-based web application designed for creating and managin
 - Responsive design using Bootstrap 5
 - Django Crispy Forms integration
 
-## Diagram of full plan's features!
-
-![PersonalBlog Diagram](./PersonalBlog.svg)
-
 ## Idea Source
 
 The idea for PersonalBlog was inspired by [roadmap.sh](https://roadmap.sh) as outlined on the [roadmap.sh's Personal Blog project](https://roadmap.sh/projects/personal-blog) page, focusing on creating a simple and customizable blog system for personal use.
