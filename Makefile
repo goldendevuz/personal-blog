@@ -1,7 +1,7 @@
 env:
 	python3 -m venv env
 act-env:	
-	. env/bin/activate
+	source env/bin/activate
 i:
 	pip install -r requirements.txt
 mig:
