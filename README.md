@@ -32,25 +32,25 @@ PersonalBlog is a Django-based web application designed for creating and managin
 3. Install the dependencies:
 
     ```bash
-    pip install -r requirements.txt
+    make i
     ```
 
 4. Apply migrations:
 
     ```bash
-    python manage.py migrate
+    make mig
     ```
 
 5. Create a superuser to access the admin panel:
 
     ```bash
-    python manage.py createsuperuser
+    make cru
     ```
 
 6. Run the development server:
 
     ```bash
-    python manage.py runserver
+    make run
     ```
 
 ## Usage
